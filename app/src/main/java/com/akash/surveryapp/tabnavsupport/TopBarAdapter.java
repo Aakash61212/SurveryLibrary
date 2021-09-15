@@ -38,6 +38,7 @@ public class TopBarAdapter extends FragmentPagerAdapter {
                 fragment = Fragment.instantiate(context, RecordFragment.class.getName());
 
                 break;
+
             case 1:
 
 
