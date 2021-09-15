@@ -8,8 +8,8 @@ import com.akash.surveryapp.database.DatabaseAdapter;
 
 
 /**
- * Created by Aman Gupta.
- * Created date 16-03-2015
+ * Created by Akash Namdev.
+ * Created date 16-03-2019
  * Error  Logging for android
  */
 public class BaseActivity extends Activity {private ProgressDialog mProgressDialog;

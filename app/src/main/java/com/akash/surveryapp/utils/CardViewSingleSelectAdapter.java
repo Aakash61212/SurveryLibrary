@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Rohit on 8/10/16.
+ * Created by Akash on 8/10/19.
  */
 public class CardViewSingleSelectAdapter extends RecyclerView.Adapter<CardViewSingleSelectAdapter.DataObjectHolder> {
     Context context;
