@@ -241,6 +241,16 @@ public class RecordListFragment extends Fragment implements RecordsListAdapter.I
         return view;
     }
 
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            setListData();
+            getFragmentManager().beginTransaction().detach(this).attach(this).commit();
+        }
+    }
+
     private void deleteImageFromFile(String imagePath, String fileName) {
         // To be safe, you should check that the SDCard is mounted
         // using Environment.getExternalStorageState() before doing this.
