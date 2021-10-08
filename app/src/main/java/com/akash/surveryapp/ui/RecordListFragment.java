@@ -231,12 +231,6 @@ public class RecordListFragment extends Fragment implements RecordsListAdapter.I
                 setListData();
             }
         });
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-              //  img_refresh.performClick();
-//            }
-//        }, 5000);
 
         return view;
     }

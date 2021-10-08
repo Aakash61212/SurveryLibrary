@@ -583,22 +583,8 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
 
     }
 
-    //timer for 10 sec and kill if task complete before 10 secs
     private synchronized void StartTimer() {
-//        try {
-//            handler = new Handler();
-//            runnable = new Runnable() {
-//                @Override
-//                public void run() {
-//                    handler.postDelayed(this, 50);
-//                    if (x < 5) {
-//                        if (pd != null) {
-//                            pd.setMessage("Loading...");
-//                            pd.show();
-//                        }
-//                    } else {
-//                        x = 1;
-//                        finishTimer();
+//
         if (!isRecordInserted) {
             isRecordInserted = true;
             StoreImageInDB(imageName, String.valueOf(Latitude), String.valueOf(Longitude), path.toString());
@@ -607,16 +593,7 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-//                    x++;
-//
-//                }
-//            };
-//            handler.postDelayed(runnable, 50);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//       }
 
-//    }
 
     private void exitAndShowTAb() {
         if (pd != null && pd.isShowing()) {
@@ -659,13 +636,7 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
 
     }
 
-//    public void finishTimer() {
 //
-//        if (handler != null) {
-//            handler.removeCallbacks(runnable);
-//        }
-//
-//    }
 
     public void recycleBitmap() {
 
@@ -683,9 +654,7 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
             pd.dismiss();
 
         }
-//        if (handler != null) {
-//            handler.removeCallbacks(runnable);
-//        }
+
 
     }
 
@@ -693,11 +662,9 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onStop() {
         super.onStop();
-//        if (handler != null) {
-//            handler.removeCallbacks(runnable);
-//        }
+
         if (isRecording) {
-//            stopRecording();
+           stopRecording();
         }
     }
 
